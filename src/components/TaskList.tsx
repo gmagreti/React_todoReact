@@ -57,7 +57,7 @@ export function TaskList() {
           <input
             type="text"
             placeholder="Adicionar novo todo"
-            onChange={(e) => setNewTaskTitle(e.target.value)}
+            onChange={(e) => setNewTaskTitle(e.target.value.substring(0, 30))}
             value={newTaskTitle}
           />
           <button
